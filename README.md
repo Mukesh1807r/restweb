@@ -270,6 +270,7 @@ Publish the website in the given URL.
 </html>
 ```
 ## Book.html
+```
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -479,9 +480,9 @@ Publish the website in the given URL.
     </form>
 
     <div id="confirmation">✅ Your booking has been submitted!</div>
-  </div>
+    </div>
 
-  <!-- Footer -->
+    <!-- Footer -->
   <footer>
     <img src="image/logo.png" alt="Logo">
     <p>© 2025 Little Lemon Restaurant | Designed by Mukesh</p>
