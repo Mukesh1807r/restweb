@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us - Little Lemon Restaurant</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #ffa726;
+    }
+
+    .logo-container {
+      text-align: center;
+      padding: 20px 10px 0;
+      background-color: #fff;
+    }
+
+    .logo-container img {
+      height: 80px;
+    }
+
+    nav {
+      background-color: #212121;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 12px 0;
+    }
+
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #ffd54f;
+    }
+
+    header {
+      text-align: center;
+      background-color: #ffb300;
+      padding: 30px 20px;
+      color: white;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+
+    .contact-section {
+      background: white;
+      padding: 40px 30px;
+      max-width: 700px;
+      margin: 30px auto;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      animation: fadeIn 0.8s ease;
+    }
+
+    .contact-section h2 {
+      text-align: center;
+      color: #ff9800;
+      margin-bottom: 25px;
+    }
+
+    .contact-section form {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+
+    .contact-section input,
+    .contact-section textarea {
+      padding: 12px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      transition: border 0.3s;
+    }
+
+    .contact-section input:focus,
+    .contact-section textarea:focus {
+      border-color: #ff9800;
+      outline: none;
+    }
+
+    .contact-section textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+
+    .contact-section button {
+      padding: 12px;
+      font-size: 16px;
+      background-color: #fb8c00;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .contact-section button:hover {
+      background-color: #ef6c00;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 600px) {
+      nav a {
+        margin: 10px;
+        display: block;
+      }
+
+      .contact-section {
+        margin: 20px;
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Logo -->
+  <div class="logo-container">
+    <img src="image/logo.png" alt="Little Lemon Logo">
+  </div>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="administration.html">Administration</a>
+    <a href="contact.html">Contact Us</a>
+  </nav>
+
+  <!-- Header -->
+  <header>
+    <h1>Contact Little Lemon Restaurant</h1>
+    <p>We're here to help and hear from you!</p>
+  </header>
+
+  <!-- Contact Form Section -->
+  <div class="contact-section">
+    <h2>We Love to Hear from You!</h2>
+    <form>
+      <input type="text" name="name" placeholder="Your Full Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <input type="tel" name="phone" placeholder="Your Phone Number (optional)">
+      <textarea name="message" placeholder="Your Message..." required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+
+</body>
+</html>

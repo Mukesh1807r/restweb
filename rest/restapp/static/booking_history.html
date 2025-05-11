@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Booking History</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+        }
+
+        .logo-container {
+            text-align: center;
+            padding: 20px;
+            background-color: white;
+        }
+
+        .logo-container img {
+            height: 80px;
+        }
+
+        nav {
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            margin: 0 15px;
+        }
+
+        header {
+            text-align: center;
+            background-color: orange;
+            padding: 20px;
+        }
+
+        .history-section {
+            padding: 30px;
+            max-width: 1000px;
+            margin: auto;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+        }
+
+        .history-section h2 {
+            text-align: center;
+            color: orange;
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: center;
+        }
+
+        th {
+            background-color: orange;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        .no-bookings {
+            text-align: center;
+            padding: 20px;
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Logo -->
+    <div class="logo-container">
+        <img src="image/logo.png" alt="HOTSPOT Logo">
+    </div>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="adminstration.html">Administration</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="booking_history.html">Booking History</a>
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <h1>Booking History</h1>
+    </header>
+
+    <!-- Booking History Section -->
+    <div class="history-section">
+        <h2>Past Bookings</h2>
+
+        <!-- Replace below with dynamic data if you're using Django/PHP -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Date</th>
+                    <th>Time</th>
+                    <th>Guests</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>John Doe</td>
+                    <td>john@example.com</td>
+                    <td>9876543210</td>
+                    <td>2025-05-12</td>
+                    <td>19:00</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>Alice Smith</td>
+                    <td>alice@example.com</td>
+                    <td>9123456780</td>
+                    <td>2025-05-13</td>
+                    <td>20:30</td>
+                    <td>2</td>
+                </tr>
+                <!-- Add more rows as needed -->
+            </tbody>
+        </table>
+
+    </div>
+
+</body>
+</html>

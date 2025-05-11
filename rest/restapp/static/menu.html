@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: orange;
+        }
+
+        /* Logo Section */
+        .logo-container {
+            text-align: center;
+            padding: 20px 10px 0;
+            background-color: white;
+        }
+
+        .logo-container img {
+            height: 80px;
+        }
+
+        nav {
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        header {
+            text-align: center;
+            background-color: orange;
+            padding: 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            color: white;
+        }
+
+        .menu-section {
+            padding: 30px;
+            max-width: 1000px;
+            margin: auto;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .menu-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .menu-item {
+            background-color: orange;
+            border-radius: 10px;
+            padding: 15px;
+            text-align: center;
+            width: 200px;
+        }
+
+        .menu-item img {
+            width: 100%;
+            height: 150px;
+            border-radius: 10px;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+
+        .menu-item h3 {
+            margin: 5px 0;
+        }
+
+        .menu-item p {
+            font-size: 14px;
+            color: white;
+        }
+
+        .price {
+            font-weight: bold;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Logo -->
+    <div class="logo-container">
+        <img src="image/logo.png" alt="Logo">
+    </div>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="administration.html">Administration</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="book.html">Book a Table</a>
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <h1>Our Menu</h1>
+    </header>
+
+    <!-- Menu Items -->
+    <div class="menu-section">
+        <div class="menu-grid">
+            <div class="menu-item">
+                <img src="image/dosa.png" alt="Dosa">
+                <h3>Dosa</h3>
+                <p>Crispy and Yummy Dosa.</p>
+                <div class="price">Rs. 30</div>
+            </div>
+            <div class="menu-item">
+                <img src="image/dal rice.jpeg" alt="Dal Rice">
+                <h3>Dal Rice</h3>
+                <p>Traditional Indian Dal and Rice.</p>
+                <div class="price">Rs. 50</div>
+            </div>
+            <div class="menu-item">
+                <img src="image/vada.jpeg" alt="Vada">
+                <h3>Vada</h3>
+                <p>Crispy and Crunchy Vada.</p>
+                <div class="price">Rs. 10</div>
+            </div>
+            <div class="menu-item">
+                <img src="image/coffee.jpeg" alt="Coffee">
+                <h3>Coffee</h3>
+                <p>A delightful Coffee.</p>
+                <div class="price">Rs. 10</div>
+            </div>
+            <div class="menu-item">
+                <img src="image/chappathi.jpg" alt="Chappathi">
+                <h3>Chappathi</h3>
+                <p>Soft Chappathi.</p>
+                <div class="price">Rs. 15</div>
+            </div>
+            <div class="menu-item">
+                <img src="image/nodels.jpg" alt="Noodles">
+                <h3>Noodles</h3>
+                <p>Nice and long Noodles.</p>
+                <div class="price">Rs. 100</div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
